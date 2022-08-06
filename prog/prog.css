@@ -1,0 +1,100 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* <- ocultamos el scroll horizontal */
+  /*overflow-y: hidden; <- ocultamos el scroll vertical */
+}
+
+.menu {
+  /* background-color:#3457F7;*/
+   padding-left:0px; 
+padding: 0px;
+margin: 0px;
+width: 100%;      
+display: inline-block;
+}
+.menu {
+    background-image: linear-gradient(royalblue , transparent);
+}
+
+
+.buscador {
+
+   text-align: right;
+   top:0px;
+   Left:0px;
+   width: 90%;
+   position: relative;
+   top: -40px; left: 45px;
+}
+
+
+.logo {
+ height: 17%;
+ width: 17%;
+  object-fit: scale-down;
+  position: relative;
+top: -70px; left: 0px;
+
+}
+
+h1 {
+   text-align: center;
+   position:relative;
+top: 50px; left: 130px;
+width: 80%;
+}
+
+.local{
+   border-color: red;
+   border-width: 1px;
+   border-style: solid;
+}
+ul{
+   border-color: green;
+   border-width: 1px;
+   border-style: solid;
+}
+
+
+
+footer{
+   border-color: #FF00CD;
+   border-width: 1px;
+   border-style: solid;
+}
+
+.tela{
+ height: 48%;
+ width: 48%;
+}
+
+.tela2{
+  height: 48%;
+ width: 48%;
+}
+
+a{
+  color: blue;
+  background-color: white;
+
+
+  transition-property: background color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+a:hover{
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+
+
+
+
+

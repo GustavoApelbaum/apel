@@ -1,0 +1,139 @@
+html,
+body{
+	padding: 0;
+	margin:  0
+}
+
+.menu {
+	background-color:#3457f7;
+	padding-left:0px;	
+padding: 0px;
+margin: 0px;
+width: 100%;		
+display: inline-block;
+}
+
+.buscador {
+	text-align: right;
+	position:relative;
+	/*top/bottom/
+	left/right*/
+	top:0;
+	Left:0;
+	width: 100%;
+	position: relative;
+	top: -70px; left: 0px;
+}
+.logo {
+ height: 150px;
+ width: 150px;
+  object-fit: scale-down;
+  position: relative;
+top: -90px; left: 0px;
+}
+
+h1 {
+	text-align: center;
+	position:relative;
+top:0;
+Left:0;
+width: 100%;
+}
+footer{
+	border-color: #FF00CD;
+   border-width: 1px;
+   border-style: solid;
+}
+.grid {
+	width: 900px;
+	margin: auto;
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(4, 200px);
+	/*
+						100px 100px 100px 100px
+	*/
+	grid-template-areas: 'spoon spoon'
+						 'ribb corderito'
+						 'ribb corderito'
+						 'friza friza'
+}
+
+.grid > div {
+	display: flex;
+	align-items: stretch; /*vertical*/
+	justify-content: center; /* horizonal */
+	background-color: black
+}
+
+.grid a {
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.grid a:hover {
+	opacity: 0.7 /*0 - 1*/;
+}
+
+.grid1 {
+	grid-area: spoon
+}
+
+.grid1 a {
+	background-image: url('../imagen/spoon.jpg');
+}
+
+.grid2 {
+	grid-area: ribb
+}
+
+.grid2 a {
+	background-image: url('../imagen/ribb.jpg');
+}
+
+.grid3 {
+	grid-area: corderito
+}
+
+.grid3 a {
+	background-image: url('../imagen/corderito.jpg');
+}
+
+.grid4 {
+	grid-area: friza
+}
+
+.grid4 a {
+	background-image: url('../imagen/friza.jpg');
+}
+
+
+
+.flex {
+	width: 900px;
+	margin: auto;
+	margin-top: 70px;
+}
+
+ h2 {
+	text-align: center;
+}
+
+.flex .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 30px; /* espacios entre columnas (para elementos hijos) */
+	margin-top: 40px; /* espacios entre filas (es un margin, porque no es un elemento flexible) */
+}
+
