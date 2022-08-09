@@ -5,7 +5,7 @@ body{
 }
 
 .menu {
-	background-color:#3457f7;
+	background-image: linear-gradient(royalblue , transparent);
 	padding-left:0px;	
 padding: 0px;
 margin: 0px;
@@ -14,30 +14,30 @@ display: inline-block;
 }
 
 .buscador {
-	text-align: right;
-	position:relative;
-	/*top/bottom/
-	left/right*/
-	top:0;
-	Left:0;
-	width: 100%;
-	position: relative;
-	top: -70px; left: 0px;
+
+   text-align: right;
+   top:0px;
+   Left:0px;
+   width: 90%;
+   position: relative;
+   top: -40px; left: 45px;
 }
+
+
 .logo {
- height: 150px;
- width: 150px;
+ height: 17%;
+ width: 17%;
   object-fit: scale-down;
   position: relative;
-top: -90px; left: 0px;
+top: -70px; left: 0px;
+
 }
 
 h1 {
-	text-align: center;
-	position:relative;
-top:0;
-Left:0;
-width: 100%;
+   text-align: center;
+   position:relative;
+top: 50px; left: 130px;
+width: 80%;
 }
 footer{
 	border-color: #FF00CD;
@@ -137,3 +137,18 @@ footer{
 	margin-top: 40px; /* espacios entre filas (es un margin, porque no es un elemento flexible) */
 }
 
+a{
+  color: blue;
+  background-color: white;
+
+
+  transition-property: background color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+a:hover{
+  background-color: blue;
+  color: white;
+}

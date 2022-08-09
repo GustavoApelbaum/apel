@@ -5,6 +5,9 @@ html, body{
   /*overflow-y: hidden; <- ocultamos el scroll vertical */
 }
 
+*{
+    box-sizing: border-box;
+}
 .menu {
   /* background-color:#3457F7;*/
    padding-left:0px; 
