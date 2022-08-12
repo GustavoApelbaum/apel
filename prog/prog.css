@@ -67,14 +67,9 @@ footer{
    border-style: solid;
 }
 
-.tela{
+.rounded{
  height: 48%;
- width: 48%;
-}
-
-.tela2{
-  height: 48%;
- width: 48%;
+ width: 49%;
 }
 
 a{
