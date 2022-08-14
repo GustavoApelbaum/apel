@@ -33,8 +33,8 @@ display: inline-block;
 
 
 .logo {
- height: 17%;
- width: 17%;
+ height: 35%;
+ width: 35%;
   object-fit: scale-down;
   position: relative;
 top: -70px; left: 0px;
@@ -48,6 +48,7 @@ top: 50px; left: 130px;
 width: 80%;
 }
 
+/* inicio */
 .local{
    border-color: red;
    border-width: 1px;
@@ -88,6 +89,138 @@ a:hover{
   color: white;
 }
 
+/* productos */ 
+.grid {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 200px);
+    /*
+                        100px 100px 100px 100px
+    */
+    grid-template-areas: 'spoon spoon'
+                         'ribb corderito'
+                         'ribb corderito'
+                         'friza friza'
+}
+
+.grid > div {
+    display: flex;
+    align-items: stretch; /*vertical*/
+    justify-content: center; /* horizonal */
+    background-color: black
+}
+
+.grid a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid a:hover {
+    opacity: 0.7 /*0 - 1*/;
+}
+
+.grid1 {
+    grid-area: spoon
+}
+
+.grid1 a {
+    background-image: url('../imagen/spoon.jpg');
+}
+
+.grid2 {
+    grid-area: ribb
+}
+
+.grid2 a {
+    background-image: url('../imagen/ribb.jpg');
+}
+
+.grid3 {
+    grid-area: corderito
+}
+
+.grid3 a {
+    background-image: url('../imagen/corderito.jpg');
+}
+
+.grid4 {
+    grid-area: friza
+}
+
+.grid4 a {
+    background-image: url('../imagen/friza.jpg');
+}
+
+
+
+.flex {
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.productos {
+    text-align: center;
+}
+
+.flex .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px; /* espacios entre columnas (para elementos hijos) */
+    margin-top: 40px; /* espacios entre filas (es un margin, porque no es un elemento flexible) */
+}
+
+ /* quienes somos nada*/
+
+ /* preguntas frequentes */
+ .flex-container{
+
+    box-sizing:border-box;
+    display:flex;
+    flex-flow: row wrap;
+    background-color: greenyellow;
+    padding:10px;
+    border:2px solid black;
+}
+
+.flex-container h3{
+    background-color:skyblue;
+    width:630px;
+    margin:10px;
+    text-align:center;
+    line-height:75px;
+    font-size:30px;
+    border:2px solid black;
+}
+
+.flex-container p{
+    background-color:indianred;
+    width:630px;
+    margin:10px;
+    text-align:center;
+    line-height:75px;
+    font-size:30px;
+    border:2px solid black;
+}
+/* contacto*/
+.cont{
+    border-color: greenyellow;
+   border-width: 1px;
+   border-style: solid;
+}
 
 
 
